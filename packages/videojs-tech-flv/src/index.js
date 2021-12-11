@@ -1,8 +1,5 @@
 import flvjs from 'flv.js';
-import { debounce, silencePromise, changeOffset, changeQueries } from './shared';
 
-// const { METADATA_ARRIVED, RECOVERED_EARLY_EOF, ERROR } = flvjs.Events;
-// const { UNRECOVERABLE_EARLY_EOF, EARLY_EOF } = flvjs.LoaderErrors;
 const { METADATA_ARRIVED, MEDIA_INFO, ERROR } = flvjs.Events;
 const { NETWORK_ERROR, MEDIA_ERROR } = flvjs.ErrorTypes;
 const defaults = {
